@@ -8,14 +8,12 @@ const Header = () => {
     <div className="flex justify-between items-center">
       <h1>QC Dashka</h1>
       {router.pathname == "/" ? (
-        <p>Welcome back, Comrade</p>
+        <p className="text-right">Welcome back, Comrade</p>
       ) : router.pathname == "/customers" ? (
-        <p>Customers</p>
-      ) : router.pathname == "/orders" ? (
-        <p>Orders</p>
+        <p className="text-right">Customers</p>
       ) : (
-        <p>Settings</p>
-      )}
+        <p className="text-right">Orders</p>
+      ) }
     </div>
   );
 };
